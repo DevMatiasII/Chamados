@@ -1,0 +1,88 @@
+/* Sugestão para RegisterPage.css */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.register-form {
+  background: #fff;
+  border-radius: 36px;
+  box-shadow: 2px 4px 16px #0001;
+  padding: 40px 40px 30px 40px;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-input {
+  border: none;
+  outline: none;
+  background: #b3e1ff;
+  border-radius: 24px;
+  font-size: 18px;
+  margin-bottom: 34px; /* aumente o valor para mais espaço */
+  padding: 14px 24px;
+  transition: box-shadow 0.2s;
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+}
+
+.register-input.nome { width: 420px; }
+.register-input.email { width: 360px; }
+.register-input.senha { width: 260px; }
+.register-input.cpf { width: 200px; }
+.register-input.telefone { width: 320px; }
+
+.register-radio-group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.register-radio-label {
+  background: #b3e1ff;
+  border-radius: 24px;
+  padding: 8px 32px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.register-radio-label input[type="radio"] {
+  accent-color: #2196f3;
+  margin-right: 8px;
+}
+
+.register-divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #b3e1ff;
+  margin: 18px 0 18px 0;
+}
+
+.register-btn {
+  width: 260px;
+  margin: 0 auto;
+  padding: 14px 0;
+  border: none;
+  border-radius: 24px;
+  background: #99d6ff;
+  color: #222;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: block;
+}
+
+.register-btn:hover {
+  background: #2196f3;
+  color: #fff;
+}
