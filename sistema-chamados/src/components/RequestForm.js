@@ -36,7 +36,7 @@ function RequestForm({ user }) {
   async function handleSubmit(e) {
     e.preventDefault();
     const token = localStorage.getItem("token");
-    await fetch("http://localhost:5000/api/requests", {
+    await fetch("https://chamados-eyag.onrender.com/api/requests", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

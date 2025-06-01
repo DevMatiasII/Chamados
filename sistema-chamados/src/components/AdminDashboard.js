@@ -6,7 +6,7 @@ function AdminDashboard({ user, onLogout }) {
   useEffect(() => {
     async function fetchRequests() {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:5000/api/requests", {
+      const response = await fetch("/api/requests", {
         headers: { Authorization: token }
       });
       if (response.ok) {

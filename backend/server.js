@@ -16,8 +16,8 @@ const UserSchema = new mongoose.Schema({
   nome: String,
   email: String,
   senha: String,
-  cpf: String,        // <-- adicionado
-  telefone: String,   // <-- adicionado
+  cpf: String,       
+  telefone: String, 
   role: { type: String, default: "user" } // "user" ou "admin"
 });
 
@@ -28,7 +28,7 @@ const RequestSchema = new mongoose.Schema({
   telefone: String,
   solicitacao: String,
   resposta: String,
-  status: { type: String, default: "Aberto" } // <-- Adicionado
+  status: { type: String, default: "Aberto" }
 });
 
 const User = mongoose.model("User", UserSchema);
@@ -49,9 +49,9 @@ function auth(req, res, next) {
 
 // Rotas
 app.post("/api/register", async (req, res) => {
-  const { nome, email, senha, cpf, telefone, role } = req.body; // inclua cpf e telefone
+  const { nome, email, senha, cpf, telefone, role } = req.body; 
   const hash = await bcrypt.hash(senha, 10);
-  const user = new User({ nome, email, senha: hash, cpf, telefone, role }); // inclua cpf e telefone
+  const user = new User({ nome, email, senha: hash, cpf, telefone, role });
   await user.save();
   res.sendStatus(201);
 });

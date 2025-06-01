@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import UserDashboard from "./pages/UserDashboard";
-import AdminDashboard from "./pages/AdminDashboard"; // Crie este componente!
+import AdminDashboard from "./pages/AdminDashboard"; 
 
 function App() {
   const [user, setUser] = useState(null);
@@ -19,7 +19,7 @@ function App() {
       : <LoginPage setUser={setUser} setShowRegister={setShowRegister} />;
   }
 
-  // Verifica o tipo de usuário
+ 
   if (user.role === "admin") {
     return <AdminDashboard user={user} onLogout={handleLogout} />;
   }

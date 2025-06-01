@@ -9,7 +9,7 @@ function MyRequestsPage({ user, onBack, onShowSobre, onShowAjuda }) {
   useEffect(() => {
     async function fetchMyRequests() {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:5000/api/my-requests", {
+      const response = await fetch("https://chamados-eyag.onrender.com/api/my-requests", {
         headers: { Authorization: token }
       });
       if (response.ok) {

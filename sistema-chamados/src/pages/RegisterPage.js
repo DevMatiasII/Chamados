@@ -14,7 +14,7 @@ function RegisterPage(props) {
   async function handleRegister(e) {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/register", {
+      const response = await fetch("https://chamados-eyag.onrender.com/api/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ nome, email, senha: password, cpf, telefone, role }),
