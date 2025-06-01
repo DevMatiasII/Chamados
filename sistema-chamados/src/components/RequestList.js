@@ -8,7 +8,7 @@ function RequestList() {
   useEffect(() => {
     async function fetchRequests() {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:5000/api/requests", {
+      const response = await fetch("https://chamados-eyag.onrender.com/api/requests", {
         headers: {
           Authorization: token
         }
@@ -23,7 +23,7 @@ function RequestList() {
 
   async function handleEnviarResposta(id) {
     const token = localStorage.getItem("token");
-    await fetch(`http://localhost:5000/api/requests/${id}/responder`, {
+    await fetch(`https://chamados-eyag.onrender.com/api/requests/${id}/responder`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -75,7 +75,7 @@ function RequestList() {
             onChange={async e => {
               const status = e.target.value;
               const token = localStorage.getItem("token");
-              await fetch(`http://localhost:5000/api/requests/${r._id}/status`, {
+              await fetch(`https://chamados-eyag.onrender.com/api/requests/${r._id}/status`, {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
