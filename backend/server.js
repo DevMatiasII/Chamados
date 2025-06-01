@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // Troque pela sua string de conexão do MongoDB Atlas
-mongoose.connect("mongodb+srv://devmatias1:emyt2tf4tYeIdfbZ@cluster1.gqlpjll.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1");
+mongoose.connect(process.env.MONGODB_URI);
 
 // Schemas
 const UserSchema = new mongoose.Schema({
@@ -118,4 +118,8 @@ app.get("/api/my-requests", auth, async (req, res) => {
   res.json(requests);
 });
 
-app.listen(5000, () => console.log("Backend rodando na porta 5000"));
+app.get("/", (req, res) => {
+  res.send("API de Chamados rodando!");
+});
+
+app.listen(process.env.PORT || 5000, () => console.log("Backend rodando"));
