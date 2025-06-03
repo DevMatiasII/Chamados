@@ -51,7 +51,6 @@
   color: #111;
 }
 
-/* Adicione ao AdminDashboard.css ou crie RequestList.css e importe no componente */
 
 .request-card {
   background: #fff;
@@ -88,7 +87,7 @@
   background: #eee;
 }
 
-/* Request List Table Styles */
+
 
 .request-list-table {
   background: #fff !important;

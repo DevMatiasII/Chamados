@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import "../components/Header.css";
-import "./MyRequestsPage.css"; // adicione este import
+import "./MyRequestsPage.css"; 
 
 function MyRequestsPage({ user, onBack, onShowSobre, onShowAjuda }) {
   const [requests, setRequests] = useState([]);

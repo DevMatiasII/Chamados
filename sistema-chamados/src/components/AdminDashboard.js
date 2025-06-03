@@ -29,8 +29,7 @@ function AdminDashboard({ user, onLogout }) {
           <p><b>Telefone:</b> {request.telefone}</p>
           <p><b>Solicitação:</b> {request.solicitacao}</p>
           <p><b>Resposta:</b> {request.resposta ? request.resposta : "Sem resposta"}</p>
-          <p><b>Status:</b> {request.status}</p> {/* <-- Aqui você exibe o status */}
-          {/* Aqui pode colocar o select para alterar o status */}
+          <p><b>Status:</b> {request.status}</p>
         </div>
       ))}
     </div>

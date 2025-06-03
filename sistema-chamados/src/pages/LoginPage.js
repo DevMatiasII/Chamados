@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./LoginPage.css"; // Certifique-se de que o caminho está correto
+import "./LoginPage.css"; 
 import Header from "../components/Header";
-import "../components/Header.css"; // Não esqueça do CSS!
+import "../components/Header.css"; 
 
 function LoginPage(props) {
   const [email, setEmail] = useState("");

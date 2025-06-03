@@ -1,7 +1,7 @@
-/* Adicione ao AdminDashboard.css ou ao CSS do RequestList */
+
 
 .request-list-table, .request-list-table th, .request-list-table td {
-  background: #fff !important; /* fundo branco para tabela */
+  background: #fff !important; 
   color: #222 !important;
   border-radius: 12px;
 }
@@ -16,9 +16,9 @@
 }
 
 .request-card {
-  background: #fff; /* fundo branco */
+  background: #fff;
   color: #222;
-  border: 2px solid #3b82f6; /* cor azul nas bordas */
+  border: 2px solid #3b82f6; 
   border-radius: 16px;
   margin: 12px 0 12px 32px;
   padding: 12px 24px;
@@ -50,14 +50,12 @@
   background: #eee;
 }
 
-/* Adicione ao seu RequestList.css ou ao CSS do container pai */
 
-/* Exemplo para um container chamado .admin-table-box */
 .admin-table-box {
   padding-left: 0 !important;
   margin-left: 0 !important;
-  justify-content: flex-start !important; /* Se for flex */
-  align-items: flex-start !important;     /* Se for flex */
+  justify-content: flex-start !important; 
+  align-items: flex-start !important;     
 }
 
 body, html {
