@@ -8,17 +8,17 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Troque pela sua string de conexão do MongoDB Atlas
+
 mongoose.connect(process.env.MONGODB_URI);
 
-// Schemas
+
 const UserSchema = new mongoose.Schema({
   nome: String,
   email: String,
   senha: String,
   cpf: String,       
   telefone: String, 
-  role: { type: String, default: "user" } // "user" ou "admin"
+  role: { type: String, default: "user" } 
 });
 
 const RequestSchema = new mongoose.Schema({

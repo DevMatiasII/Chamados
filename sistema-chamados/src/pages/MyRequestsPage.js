@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import "../components/Header.css";
+import "./MyRequestsPage.css"; // adicione este import
 
 function MyRequestsPage({ user, onBack, onShowSobre, onShowAjuda }) {
   const [requests, setRequests] = useState([]);
@@ -24,16 +25,16 @@ function MyRequestsPage({ user, onBack, onShowSobre, onShowAjuda }) {
   return (
     <>
       <Header onShowSobre={onShowSobre} onShowAjuda={onShowAjuda} />
-      <div>
-        <h2>Meus Chamados</h2>
-        <button onClick={onBack}>Voltar</button>
+      <div className="my-requests-container">
+        <h2 className="my-requests-title">Meus Chamados</h2>
+        <button className="my-requests-back-btn" onClick={onBack}>Voltar</button>
         {loading ? (
           <p>Carregando...</p>
         ) : requests.length === 0 ? (
           <p>Você ainda não enviou nenhum chamado.</p>
         ) : (
           requests.map(r => (
-            <div key={r._id} style={{ border: "1px solid #ccc", margin: 8, padding: 8 }}>
+            <div key={r._id} className="my-request-card">
               <p><b>Solicitação:</b> {r.solicitacao}</p>
               <p><b>Resposta:</b> {r.resposta ? r.resposta : "Ainda não respondido"}</p>
               <p><b>Status:</b> {r.status}</p>

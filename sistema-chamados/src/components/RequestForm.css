@@ -1,67 +1,93 @@
-.request-form {
-  margin: 40px 0 0 0;
-  width: 600px;
-  padding: 0;
-  border-radius: 12px;
-  box-sizing: border-box;
+/* Centraliza o formulário na tela e aplica visual escuro igual admin */
+html, body {
+  background: #181c1f !important;
 }
-
-.request-row {
+.form-container {
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  margin-bottom: 28px;
+  justify-content: center;
+  background: #181c1f; /* fundo escuro igual admin-dashboard */
 }
 
-.request-row label {
-  width: 120px;
-  margin-right: 18px;
-  font-size: 24px;
-  font-family: Arial, sans-serif;
-  font-weight: normal;
+/* Card do formulário */
+.request-form {
+  background: #fff; /* agora branco */
+  box-shadow: 0 0 60px 0 #000a;
+  border-radius: 24px;
+  padding: 64px 48px;     /* aumenta o padding */
+  width: 600px;           /* aumenta a largura do formulário */
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;              /* aumenta o espaçamento entre campos */
+  border: 1.5px solid #181c1f; /* borda escura */
 }
 
-.request-row input {
-  width: 320px;
-  font-size: 20px;
-  padding: 4px 10px;
-  border: 1px solid #222;
-  border-radius: 2px;
-  background: #fff;
+/* Linha de campo */
+.request-row {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;              /* aumenta o espaçamento entre label e input */
 }
 
-.request-row textarea {
-  width: 100%;
-  min-width: 800px; /* igual ao input */
-  max-width: 100%;
-  min-height: 100px;
-  font-size: 16px;
-  padding: 8px 12px;
-  border: 1px solid #888;
-  border-radius: 10px;
-  background: #fff;
-  resize: vertical;
-}
-
+/* Label */
+.request-row label,
 .request-form label[for="solicitacao"] {
-  display: block;
-  margin-bottom: 6px;
-  margin-left: 0;
+  font-size: 1.35rem;     /* aumenta o tamanho da fonte das labels */
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  color: #181c1f; /* texto escuro */
+  margin-bottom: 2px;
 }
 
+/* Inputs */
+.request-row input,
+.request-row textarea {
+  font-size: 1.35rem;     /* aumenta o tamanho da fonte dos campos */
+  padding: 18px 22px;     /* aumenta o padding dos campos */
+  border: 1.5px solid #bbb;
+  border-radius: 8px;
+  background: #f7f7f7;
+  color: #181c1f;
+  transition: border 0.2s, background 0.2s;
+  outline: none;
+}
+
+.request-row input:focus,
+.request-row textarea:focus {
+  border: 1.5px solid #181c1f;
+  background: #fff;
+}
+
+/* Textarea */
+.request-row textarea {
+  min-height: 140px;      /* aumenta a altura do textarea */
+  width: 100%;         /* ocupa toda a largura do container */
+  resize: vertical;    /* permite redimensionar verticalmente */
+  font-size: 1rem;     /* aumenta o tamanho da fonte, se desejar */
+  padding: 10px;       /* espaço interno para melhor aparência */
+}
+
+/* Botão */
 .request-btn {
-  margin-top: 10px;
-  margin-left: 0;
-  padding: 8px 36px;
+  margin-top: 18px;
+  padding: 20px 0;        /* aumenta o padding do botão */
   border: none;
-  border-radius: 7px;
-  background: #ccc;
-  font-size: 16px;
+  border-radius: 30px;
+  background: #181c1f; /* botão escuro */
+  color: #fff;
+  font-size: 1.35rem;     /* aumenta o tamanho da fonte do botão */
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s;
-  display: block;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+  box-shadow: 0 1px 4px 0 #0002;
+  letter-spacing: 1px;
 }
 
 .request-btn:hover {
-  background: #2196f3;
+  background: #333;
   color: #fff;
 }

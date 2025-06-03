@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./RequestList.css"; // Importe o arquivo CSS aqui
 
 function RequestList() {
   const [requests, setRequests] = useState([]);
@@ -41,7 +42,7 @@ function RequestList() {
       <h3>Solicitações Recebidas</h3>
       {requests.length === 0 && <p>Nenhuma solicitação encontrada.</p>}
       {requests.map(r => (
-        <div key={r._id} style={{ border: "1px solid #ccc", margin: 8, padding: 8 }}>
+        <div key={r._id} className="request-card">
           <p><b>Nome:</b> {r.nome}</p>
           <p><b>CPF:</b> {r.cpf}</p>
           <p><b>Telefone:</b> {r.telefone}</p>

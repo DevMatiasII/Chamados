@@ -1,0 +1,59 @@
+/* Exemplo para AdminPage.css ou HistoricoChamados.css */
+
+.admin-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #111;
+}
+
+.admin-title {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.admin-table-box {
+  background: rgba(20, 20, 20, 0.95);
+  border: 1.5px solid #fff;
+  border-radius: 24px;
+  box-shadow: 0 0 60px 0 #000a;
+  padding: 40px 30px;
+  min-width: 70vw;
+  min-height: 500px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th, .admin-table td {
+  color: #fff;
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.admin-table th {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.admin-table tr {
+  border-bottom: 1px solid #333;
+}
+
+.admin-table tr:last-child {
+  border-bottom: none;
+}

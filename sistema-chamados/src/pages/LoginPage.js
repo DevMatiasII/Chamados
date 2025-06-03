@@ -20,7 +20,7 @@ function LoginPage(props) {
         return;
       }
       const data = await response.json();
-      console.log("Dados recebidos do backend:", data); // <-- Adicione esta linha
+      console.log("Dados recebidos do backend:", data); //
       localStorage.setItem("token", data.token);
       props.setUser({
         nome: data.nome,

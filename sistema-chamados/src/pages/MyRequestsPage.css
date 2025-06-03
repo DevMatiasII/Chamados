@@ -1,0 +1,38 @@
+.my-requests-container {
+  padding: 24px 32px;
+}
+
+.my-requests-title {
+  margin-bottom: 16px;
+}
+
+.my-requests-back-btn {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #3b82f6;
+  background: #fff;
+  color: #222;
+  padding: 6px 18px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.my-requests-back-btn:hover {
+  background: #f0f6ff;
+}
+
+.my-request-card {
+  background: #fff;
+  color: #222;
+  border: 2px solid #3b82f6;
+  border-radius: 16px;
+  margin: 12px 0;
+  padding: 16px 24px;
+  box-shadow: 0 2px 12px 0 #0001;
+  max-width: 600px;
+}
+
+.my-request-card b {
+  color: #111;
+}

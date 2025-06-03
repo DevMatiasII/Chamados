@@ -1,0 +1,115 @@
+/* Adicione ao AdminDashboard.css ou ao CSS do RequestList */
+
+.request-list-table, .request-list-table th, .request-list-table td {
+  background: #fff !important; /* fundo branco para tabela */
+  color: #222 !important;
+  border-radius: 12px;
+}
+
+.request-list-table th {
+  color: #222 !important;
+  font-weight: bold;
+}
+
+.request-list-table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.request-card {
+  background: #fff; /* fundo branco */
+  color: #222;
+  border: 2px solid #3b82f6; /* cor azul nas bordas */
+  border-radius: 16px;
+  margin: 12px 0 12px 32px;
+  padding: 12px 24px;
+  box-shadow: 0 2px 12px 0 #0001;
+  width: calc(100% - 64px);
+  max-width: 600px;
+  transition: box-shadow 0.2s;
+}
+
+.request-card b {
+  color: #111;
+}
+
+.request-card button,
+.request-card select {
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 6px 16px;
+  font-size: 1rem;
+  background: #f5f5f5;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.request-card button:hover,
+.request-card select:hover {
+  background: #eee;
+}
+
+/* Adicione ao seu RequestList.css ou ao CSS do container pai */
+
+/* Exemplo para um container chamado .admin-table-box */
+.admin-table-box {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  justify-content: flex-start !important; /* Se for flex */
+  align-items: flex-start !important;     /* Se for flex */
+}
+
+body, html {
+  background: #111 !important;
+  min-height: 100vh;
+}
+
+.form-container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px 0 #0002;
+  padding: 32px 48px;
+  max-width: 520px;
+  margin: 48px auto;
+  color: #222;
+}
+
+.form-container label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  background: #fafafa;
+  color: #222;
+  box-sizing: border-box;
+}
+
+.form-container textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-container button {
+  background: #e0e0e0;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 32px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-container button:hover {
+  background: #d5d5d5;
+}
