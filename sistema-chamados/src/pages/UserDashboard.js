@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MyRequestsPage from "./MyRequestsPage";
 import RequestForm from "../components/RequestForm";
-import "./UserDashboard.css"; // Crie este arquivo
+import "./UserDashboard.css";
 
 function UserDashboard({ user, onLogout }) {
   const [showMyRequests, setShowMyRequests] = useState(false);

@@ -8,6 +8,7 @@ function MyRequestsPage({ user, onBack, onShowSobre, onShowAjuda }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    document.title = "Meus Chamados - Chamaki";
     async function fetchMyRequests() {
       const token = localStorage.getItem("token");
       const response = await fetch("https://chamados-eyag.onrender.com/api/my-requests", {

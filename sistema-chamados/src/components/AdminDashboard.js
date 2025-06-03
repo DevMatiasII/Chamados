@@ -4,6 +4,7 @@ function AdminDashboard({ user, onLogout }) {
   const [requests, setRequests] = useState([]);
 
   useEffect(() => {
+    document.title = "Painel do Admin - Chamaki"; // <-- Aqui muda o título da aba
     async function fetchRequests() {
       const token = localStorage.getItem("token");
       const response = await fetch("/api/requests", {
